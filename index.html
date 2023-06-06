@@ -1,0 +1,216 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper, Scissors, Secret Fourth Thing</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>Rock, Paper, Scissors, Secret Fourth Thing</header>
+    <section class='main-game'>
+
+        <p class="cpu-text"></p>        
+
+        <div class="game-buttons">
+            <button class="standard">Rock</button>
+            <button class="standard">Paper</button>
+            <button class="standard">Scissors</button>
+            <button class="secret-thing">Secret Fourth Thing</button>
+        </div>
+
+        <p class="score-counter"></p>
+
+    </section>
+
+
+<div id="all-godzilla">
+    <div id='godzilla-mode' class='hidden'>
+        <img class='godzilla-pic' src="resources/15200131561_9f298093f8_b.jpg" alt="Godzilla looking sad">
+        <div class="godzilla-buttons">
+            <button id='ask'>Ask him what's wrong.</button>
+            <button id='feed'>Feed him.</button>
+            <button id='sing'>Sing to him.</button>
+            <button id='leave'>Leave.</button>
+        </div>
+
+    </div>
+
+    <div id='godzilla-sing' class='hidden'>
+        <img class='godzilla-pic' src="resources/15200131561_9f298093f8_b.jpg" alt="Godzilla looking sad">
+        <div class="godzilla-buttons">
+            <button id='quiet'>Sing more quietly.</button>
+            <button id='loud'>Sing more loudly.</button>
+            <button id='diff-song'>Sing a different song.</button>
+            <button id='same-song'>Continue singing as you are.</button>
+        </div>
+
+    </div>
+
+    <div id='godzilla-breakthru' class='hidden'>
+        <img class='godzilla-pic' src="resources/15200131561_9f298093f8_b.jpg" alt="Godzilla looking sad">
+        <div class="godzilla-buttons">
+            <button id='reach'>Reach for his hand.</button>
+            <button id='tissue'>Offer him a tissue.</button>
+            <button id='baby'>Call him a whiny wittle baby.</button>
+            <button id='crying'>Start crying, too.</button>
+        </div>
+
+    </div>
+
+    <div id='godzilla-gettingthere' class='hidden'>
+        <img class='godzilla-pic' src="resources/15200131561_9f298093f8_b.jpg" alt="Godzilla looking sad">
+        <div class="godzilla-buttons">
+            <button id='smile'>Smile at him.</button>
+            <button id='joke'>Tell a joke.</button>
+            <button id='magic-trick'>Do a magic trick.</button>
+            <button id='wrong-again'>Ask him what's wrong again.</button>
+        </div>
+
+    </div>
+
+    <div id='godzilla-magic' class='hidden'>
+        <img class='godzilla-pic' src="resources/15200131561_9f298093f8_b.jpg" alt="Godzilla looking sad">
+        <div class="godzilla-buttons">
+            <button id='photo-album'>Show him your family photo album.</button>
+            <button id='another-trick'>Do another magic trick.</button>
+            <button id='cheese'>Offer him a cheese plate.</button>
+            <button id='dime'>Ask for your dime back.</button>
+        </div>
+
+    </div>
+
+    <div id='godzilla-willthey' class='hidden'>
+        <img class='godzilla-pic' src="resources/15200131561_9f298093f8_b.jpg" alt="Godzilla looking sad">
+        <div class="godzilla-buttons">
+            <button id='hair'>Brush his hair behind his ear.</button>
+            <button id='try-leave'>Get up to leave.</button>
+            <button id='take-pic'>Ask to take a picture of him.</button>
+            <button id='reach-again'>Reach for his hand.</button>
+        </div>
+
+    </div>
+
+    <div id='godzilla-wontthey' class='hidden'>
+        <img class='godzilla-pic' src="resources/15200131561_9f298093f8_b.jpg" alt="Godzilla looking sad">
+        <div class="godzilla-buttons">
+            <button id='marry'>Marry Godzilla.</button>
+        </div>
+
+    </div>
+
+
+    <div id='wedding-display'>
+
+        <div id=altar-pics>
+            <img src="resources/backyard.jpg" alt="backyard" class="hidden image1" id="backyard-pic">
+            <img src="resources/beach.jpg" alt="beach" class="hidden image1" id="beach-pic">
+            <img src="resources/traditional.jpg" alt="traditional" class="hidden image1" id="traditional-pic">
+            <img src="resources/floral.jpg" alt="pink and white" class="hidden image1" id="pink-white-pic">
+            
+        </div>
+
+
+        <div id=flower-pics>
+            <img src="/resources/roses.jpg" alt="roses" class="hidden image2" id="rose-pic">
+            <img src="/resources/daisies.jpg" alt="daisies" class="hidden image2" id="daisy-pic">
+            <img src="/resources/tulips.jpg" alt="tulips" class="hidden image2" id="tulip-pic">
+            <img src="/resources/sticks.jpg" alt="pile of sticks" class="hidden image2" id="sticks-pic">
+
+        </div>
+
+        <div id=food-pics>
+            <img src="resources/chicken.jpg" alt="chicken" class="hidden image3" id="chicken-pic">
+            <img src="resources/pancake.png" alt="pancake" class="hidden image3" id="pancake-pic">
+            <img src="resources/burger.jpg" alt="burger" class="hidden image3" id="burger-pic">
+            <img src="resources/nothing.jpg" alt="nothing" class="hidden image3" id="nothing-pic">
+
+        </div>
+
+        <img src="resources/sadman.jpg" alt="sad guy" class="hidden image4" id="sad-pic">
+
+    </div>
+
+    <div id='wedding-altar' class="hidden">
+        
+        <div class="godzilla-buttons">
+            <button id='beach'>Beach.</button>
+            <button id='backyard'>Backyard.</button>
+            <button id='traditional'>Traditional.</button>
+            <button id='pink-white'>Pink and white.</button>
+        </div>
+
+    </div>
+
+    <div id='wedding-colors' class='hidden'>
+
+        <div class="godzilla-buttons">
+            <button id='pink'>Pink.</button>
+            <button id='purple'>Purple.</button>
+            <button id='blue'>Blue.</button>
+            <button id='orange'>Orange.</button>
+        </div>
+
+    </div>
+
+    <div id='wedding-flowers' class='hidden'>
+
+        <div class="godzilla-buttons">
+            <button id='roses'>Roses.</button>
+            <button id='daisies'>Daisies.</button>
+            <button id='tulips'>Tulips.</button>
+            <button id='sticks'>Just a pile of sticks is fine.</button>
+        </div>
+
+    </div>
+
+    <div id='wedding-food' class='hidden'>
+
+        <div class="godzilla-buttons">
+            <button id='chicken'>Chicken.</button>
+            <button id='pancake'>Pancakes.</button>
+            <button id='burger'>One huge burger.</button>
+            <button id='nothing'>Nothing.</button>
+        </div>
+
+    </div>
+
+    <div id='godzilla-wedding-day' class='hidden'>
+        <div class="godzilla-buttons">
+            <button id='wait'>Wait.</button>
+            <button id='wait2' class='hidden'>Keep waiting.</button>
+            <button id='wait3' class='hidden'>Wait some more.</button>
+            <button id='wait4' class='hidden'>Keep waiting...</button>
+            <button id='wave' class='hidden'>Wave to Godzilla.</button>
+            <button id='doug' class='hidden'>Ask him where Godzilla is.</button>
+            <button id='doug2' class='hidden'>Make him say it.</button>
+            <button id='runaway' class='hidden'>Run away.</button>
+            
+        </div>
+
+    </div>
+
+    <div id='godzilla-wedding-night' class='hidden'>
+        <img src="resources/rainybeach.jpg" alt="rainy beach" id="rainy" class="end-pic">
+        <img src="resources/leaving.jpg" alt="godzilla leaving" class='hidden end-pic' id="leaving">
+        <img src="resources/ocean.jpg" alt="ocean" class='hidden end-pic' id="ocean">
+        
+        <div class="godzilla-buttons">
+            
+            <button id='stop'>Catch your breath.</button>
+            <button id='let-go' class='hidden'>Let him go.</button>
+            <button id='bye' class='hidden'>Play rock, paper, scissors.</button>
+            
+        </div>
+
+    </div>
+
+</div>
+
+
+</body>
+<script src="js/app.js"></script>
+
+</html>
